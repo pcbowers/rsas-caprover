@@ -39,7 +39,7 @@ caproverOneClickApp:
             A basic application that implements the shareware, Rocket Streaming Audio Server (RSAS), and adds several environmental variables for easy setup. RSAS broadcasts live audio over HTTP(S), and is a modern replacement for Icecast and SHOUTcast. Visit the RSAS website for more information (https://www.rocketbroadcaster.com/streaming-audio-server/docs/).
         end: |-
             $$cap_appname has been deployed successfully!
-    displayName: RSAS
+    displayName: Rocket Streaming Audio Server (RSAS)
     isOfficial: false
-    description: RSAS is an icecast server.
+    description: A basic application that implements the shareware, Rocket Streaming Audio Server (RSAS).
     documentation: See https://github.com/pcbowers/rsas for the Dockerfile
