@@ -16,7 +16,7 @@ caproverOneClickApp:
         - id: '$$cap_version'
           label: RSAS Version
           defaultValue: '0.1.18'
-          description: View the Docker Image Documentation for more version information: https://hub.docker.com/r/pcbowers/rsas
+          description: View the Docker Image Documentation for more version information (https://hub.docker.com/r/pcbowers/rsas).
           validRegex: "/^([^\\s^\\/])+$/"
         - id: '$$cap_port'
           label: PORT
