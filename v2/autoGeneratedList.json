@@ -1,1 +1,1 @@
-{"appList":["rsas"],"appDetails":[{"name":"rsas","displayName":"RSAS","description":"RSAS is an icecast server.","isOfficial":false,"logoUrl":"rsas.png"}]}
+{"appList":["rsas"],"appDetails":[{"name":"rsas","displayName":"Rocket Streaming Audio Server (RSAS)","description":"A basic application that implements the shareware, Rocket Streaming Audio Server (RSAS).","isOfficial":false,"logoUrl":"rsas.png"}]}
