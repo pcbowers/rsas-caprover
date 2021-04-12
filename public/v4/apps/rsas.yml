@@ -1,0 +1,45 @@
+captainVersion: 4
+services:
+    '$$cap_appname':
+        image: pcbowers/rsas:$$cap_version
+        restart: always
+        ports:
+          - $$cap_port:8001
+        environment:
+          ICECAST_MOUNT: '$$cap_mount'
+          ICECAST_USERNAME: '$$cap_username'
+          ICECAST_PASSWORD: '$$cap_password'
+        caproverExtra:
+            containerHttpPort: 8001
+caproverOneClickApp:
+    variables:
+        - id: '$$cap_version'
+          label: RSAS Version
+          defaultValue: '0.1.18'
+          description: Check out their Docker page for the valid tags https://hub.docker.com/r/pcbowers/rsas
+          validRegex: "/^([^\\s^\\/])+$/"
+        - id: '$$cap_port'
+          label: PORT
+          defaultValue: 8080
+          description: The default port to access the stream.
+        - id: '$$cap_mount'
+          label: Mount
+          defaultValue: /example
+          description: The default mount.
+        - id: '$$cap_username'
+          label: Username
+          defaultValue: user
+          description: The default username.
+        - id: '$$cap_password'
+          label: Password
+          defaultValue: hackme
+          description: The default password
+    instructions:
+        start: |-
+            RSAS is an icecast server that can be easily deployed on Caprover.
+        end: |-
+            RSAS has been deployed!
+    displayName: RSAS
+    isOfficial: false
+    description: RSAS is an icecast server.
+    documentation: See https://github.com/pcbowers/rsas for the Dockerfile
