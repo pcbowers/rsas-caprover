@@ -16,29 +16,29 @@ caproverOneClickApp:
         - id: '$$cap_version'
           label: RSAS Version
           defaultValue: '0.1.18'
-          description: Check out their Docker page for the valid tags https://hub.docker.com/r/pcbowers/rsas
+          description: View the Docker Image Documentation for more version information: https://hub.docker.com/r/pcbowers/rsas
           validRegex: "/^([^\\s^\\/])+$/"
         - id: '$$cap_port'
           label: PORT
           defaultValue: 8080
-          description: The default port to access the stream.
+          description: The default port to access the stream. This will set up a port mapping to the local container that will provide access for your broadcaster client.
         - id: '$$cap_mount'
           label: Mount
           defaultValue: /example
-          description: The default mount.
+          description: The default mount. This is where you will find your server (i.e. example.com/example)
         - id: '$$cap_username'
           label: Username
           defaultValue: user
-          description: The default username.
+          description: The default username for authentication with your broadcaster client.
         - id: '$$cap_password'
           label: Password
           defaultValue: hackme
-          description: The default password
+          description: The default password for authentication with your broadcaster client.
     instructions:
         start: |-
-            RSAS is an icecast server that can be easily deployed on Caprover.
+            A basic application that implements the shareware, Rocket Streaming Audio Server (RSAS), and adds several environmental variables for easy setup. RSAS broadcasts live audio over HTTP(S), and is a modern replacement for Icecast and SHOUTcast. Visit the RSAS website for more information (https://www.rocketbroadcaster.com/streaming-audio-server/docs/).
         end: |-
-            RSAS has been deployed!
+            $$cap_appname has been deployed successfully!
     displayName: RSAS
     isOfficial: false
     description: RSAS is an icecast server.
